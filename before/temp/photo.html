@@ -1,0 +1,43 @@
+<div class="panel panel-default">
+	<div class="panel-heading">Photo Gallery</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/1.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/2.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/3.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/4.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/5.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/6.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/7.jpg" alt=""></a>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<a href="" class="thumbnail"><img class="photo" src="img/photo/8.JPG" alt=""></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="feedback"></div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.photo').click(function(){
+			var image = $(this).attr('src');
+			$('#feedback').html('<img src = "'+ image +'">').fadeIn();
+			return false;
+		});
+	});
+</script>

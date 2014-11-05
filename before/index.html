@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "APP">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Multi Power Solar System,Solar Panel,Multipsolar,Rural Development,Save green world"/>
+<meta name="description" content="Sales of Solar Panel,Solar Sales,Solar plantation"/>
+
+
+	<title>Multi Power Solar System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container" ng-controller = "MainCtrl">
+	<!-- Header Start here --> 
+	<div class = "row">
+		<div data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}" class = "col-md-12">
+			<a href = "#" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"><img class = "img-responsive" src = "img/logo.png"/></a>
+		</div>
+	</div>
+	<!-- Header end here -->
+
+	<!-- Menubar Start here navbar -->
+	<div class="navbar navbar-inverse" role="navigation" id="mymenu">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="" ng-click = "getPage('home')"><i class = "glyphicon glyphicon-home"></i> Home</a></li>
+					<li><a href="" ng-click = "getPage('about')">About us</a></li>
+					<li><a href="" ng-click = "getPage('product')">Product</a></li>
+					<li><a href="" ng-click = "getPage('how-works')">How It Works</a></li>
+					<li><a href="" ng-click = "getPage('features')">Features</a></li>
+					<!-- <li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Who We Are <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="" ng-click = "getPage('leaders')">Leaders</a></li>
+							<li class="divider"></li>
+							<li><a href="" ng-click = "getPage('team')">Team wecomm</a></li>
+						</ul>
+					</li> -->
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="" ng-click = "getPage('video')">Video</a></li>
+							<li class="divider"></li>
+							<li><a href="" ng-click = "getPage('photo')">Photo Gallery</a></li>
+						</ul>
+					</li>
+					<!--
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">Syster Concern <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="http://muhurterkhobor.com/" target = "_blank">Muhurter khobor</a></li>
+							<li><a href="http://www.patuakhaliweb.com/" target = "_blank">Potuakhali Web</a></li>
+							<li class="divider"></li>
+							<li><a href="http://www.tasmiatradingbd.com/" target = "_blank">Tasmia Trading</a></li>
+							<li><a href="http://orbitgsm.com/index.php/application/home" target = "_blank">Orbit GSM</a></li>
+						</ul>
+					</li>-->
+					<li><a href="" ng-click = "getPage('client')">Our Client</a></li>
+					<li><a href="" ng-click = "getPage('contact')">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- Menubar end here navbar -->
+	
+	<!-- Content start here -->
+	<div id = "content">
+		<div ng-view></div>
+	</div>		
+	<!-- Content end here -->
+</div>
+
+
+<!-- footer start here -->
+<div id = "footer">
+	<div class="container">
+		<div id = "footer_content">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="list-group">
+						<a href="#" class="list-group-item active">Navigate Site</a>
+						<a href="#" class="list-group-item">Home</a>
+						<a href="#" class="list-group-item">About</a>
+						<a href="#" class="list-group-item">How It Works</a>
+						<a href="#" class="list-group-item">Facilitis</a>
+						<a href="#" class="list-group-item">Contact</a>
+					</div>				</div>
+				<div class="col-md-6">						
+					<h4>Products</h4>
+					<hr>
+					<p><b>Multi Power Solar System</b>  produces thin-film and crystalline silicon PV modules, to meet the exacting demands of commercial and industrial establishments around the globe.</p>	
+					<p><b>Multi Power Solar System</b> was developed taking into account the need for a immediate response in emergencies and to provide</p>		
+				</div>
+				<div class="col-md-3">
+					
+					<address>
+						
+						<hr/>
+						<b>Head Office : </b><br/> Dog No. : 618,<br/>
+						Middle Badda Bazar Road<br/>
+						Badda, Dhaka-1212, Bangladesh<br/>
+						<b>Mobile : </b> +88-01817 571455<br/>
+						
+						<hr/>
+						<b>Branch Office :</b><br/>
+						Ghat Baria Bazar<br/>
+						Borguna-8700, Bangladesh.<br/>
+						Mobile : +88-01748 469396<br/>
+						
+						<hr/>
+						Web : www.multipsolar.com
+						<hr/>
+						E-mail : info@multipsolar.com
+						
+						
+					</address>
+					<!--
+					<table>
+						<tr>
+							<td><a href=""><img class="img-responsive" src="img/socials/facebook.png"></a></td>
+							<td><a href=""><img class="img-responsive" src="img/socials/twitter.png"></a></td>
+							<td><a href=""><img class="img-responsive" src="img/socials/youtube.png"></a></td>
+						</tr>
+					</table> -->
+				</div>
+			</div>
+
+			<hr>
+
+			<p style="text-align:center;padding:15px 0;">&copy; Copyrught all right reserved - 2014</p>
+
+		</div>
+	</div>
+</div>
+<!-- footer end here -->
+
+	
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.22/angular-route.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
